@@ -1,0 +1,316 @@
+
+        /* --- General Styles --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        h2 {
+font-size: 2rem;
+color: goldenrod;
+}
+        /* --- Navbar --- */
+        .navbar-logo {
+            height: 50px;
+            width: auto;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+.btn-primary {
+color: #fff;
+background-color: goldenrod;
+border-color: goldenrod;
+}
+        /* --- Hero Section --- */
+        .hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-title span {
+    color: #d4af37;
+}
+
+.hero-form {
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto 0 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-form-title {
+    font-weight: 600;
+    color: #222;
+}
+
+.submit-btn {
+    background: #d4af37;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background: #b8952f;
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .hero-section,
+    .hero-img {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-overlay {
+        padding: 30px 15px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-form {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+
+        /* --- About Section --- */
+        .text-highlight {
+            color: #0d0a08;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .slider-img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* --- Project Showcase --- */
+        .showcase-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* --- Amenities --- */
+        .amenity-item {
+    padding: 20px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.amenity-icon {
+    font-size: 38px;
+    color: lightgrey;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.amenity-item p {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.amenity-item:hover .amenity-icon {
+    color: goldenrod;
+    transform: scale(1.1);
+}
+
+.amenity-item:hover p {
+    color: goldenrod;
+}
+.amenity-item.active .amenity-icon,
+.amenity-item.active p {
+    color: goldenrod;
+}
+        /* --- Floor Plan Section --- */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list{
+    list-style-type: disc;   /* bullet points */
+    padding-left: 20px;      /* space for bullets */
+}
+
+.feature-list li{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+        /* --- Gallery --- */
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* --- Banner Images --- */
+        .banner-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .banner-section{
+    margin-bottom: 60px;
+}
+
+        /* --- Footer --- */
+        .custom-footer {
+            background-color: #010306;
+            color: #ecf0f1;
+            padding-top: 50px;
+        }
+        .footer-heading {
+            color: #fff;
+            border-bottom: 2px solid #d35400;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .footer-links li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+        .footer-links li a:hover {
+            color: #d35400;
+            padding-left: 5px;
+        }
+        .footer-contact {
+            color: #bdc3c7;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .footer-contact i {
+            margin-right: 10px;
+            margin-top: 5px;
+            color: #d35400;
+        }
+        .subscribe-box{
+    display:flex;
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+    border-radius:5px;
+    background:#fff;
+}
+
+.subscribe-input{
+    flex:1;
+    border:none;
+    padding:12px 14px;
+    font-size:14px;
+    outline:none;
+}
+
+.subscribe-btn{
+    width:50px;
+    border:none;
+    background:goldenrod;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.subscribe-btn:hover{
+    background:#c99700;
+}
+
+.subscribe-text{
+    margin-top:10px;
+    color:#ccc;
+    line-height:1.5;
+}
+
+/* Mobile adjustments */
+@media (max-width:768px){
+
+.subscribe-box{
+    flex-direction:row;
+}
+
+.subscribe-input{
+    font-size:13px;
+    padding:10px;
+}
+
+.subscribe-btn{
+    width:45px;
+}
+
+}
+        .footer-divider {
+            border-color: #010305;
+            margin: 30px 0;
+        }
+        .footer-bottom {
+            background-color: #01060b;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Tweaks --- */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .hero-overlay {
+                justify-content: center;
+                padding: 20px;
+            }
+            .hero-form {
+                width: 100%;
+            }
+            .hero-form-title {
+                text-align: center;
+            }
+        }
+    
